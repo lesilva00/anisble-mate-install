@@ -76,6 +76,9 @@
 - name: Install wireshark ...
   apt: name=wireshark state=present
 
+- name: Install gedit
+  apt: name=gedit state=present
+
   # CHANGE to primary shell
 - name: Install fish ...
   apt: name=fish state=present

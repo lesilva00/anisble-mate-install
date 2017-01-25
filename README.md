@@ -21,13 +21,13 @@ This project permits install all packages that I costume use in my projects. Alw
 * docker
 * virt-manager
 * pycharm
+* gedit
 
 ## Tasks to add
 * eclipse
 * java
 * dnsmasq
 * nodejs
-* gedit
 * ubuntu-software-central
 * notes
 
