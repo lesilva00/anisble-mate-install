@@ -30,7 +30,11 @@ This project permits install all packages that I costume use in my projects. Alw
 * dnsmasq
 * ubuntu-software-central
 * notes
-
+* atom 
+* htop
+* bmon
+* terminator
+* 
 # How to run ansible script
 
 First, you need install ansible:
