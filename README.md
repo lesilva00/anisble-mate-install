@@ -22,12 +22,12 @@ This project permits install all packages that I costume use in my projects. Alw
 * virt-manager
 * pycharm
 * gedit
+* nodejs
 
 ## Tasks to add
 * eclipse
 * java
 * dnsmasq
-* nodejs
 * ubuntu-software-central
 * notes
 
