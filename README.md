@@ -19,14 +19,13 @@ This project permits install all packages that I costume use in my projects. Alw
 * gns3-gui
 * musescore
 * docker
-
+* virt-manager
 
 ## Tasks to add
 * pycharm
 * eclipse
 * java
 * dnsmasq
-* virtmanager
 * nodejs
 * gedit
 * ubuntu-software-central
