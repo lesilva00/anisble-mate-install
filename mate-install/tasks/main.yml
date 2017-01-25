@@ -49,7 +49,11 @@
   apt: name=lxc state=present
 
 - name: Install qemu ...
-  apt: name=qemu state=present
+  apt: name={{item}} state=present
+  with_items:
+    - qemu
+    - qemu-kvm
+    - libvirt-bin
 
 - name: Install kvm ...
   apt: name=kvm state=present
