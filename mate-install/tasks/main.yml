@@ -1,0 +1,90 @@
+---
+# tasks file for mate-install
+
+- name: Install python ...
+  apt: name={{ item }} state=present
+  with_items:
+    - python2.7
+    - python3
+    - python-apt
+    - python-pip
+    - python3-pip
+
+- name: Install python-apt to can add ppa repository ...
+  apt: name=python-apt state=present
+
+  # Add repositorys, keys and ppa's
+- name: Add gns3 ppa ...
+  apt_repository: repo=ppa:gns3/ppa state=present
+
+- name: Add musescore ppa ...
+  apt_repository: repo=ppa:mscore-ubuntu/mscore-stable state=present
+
+- name: Add docker keys ...
+  apt_key: url="https://yum.dockerproject.org/gpg" state=present
+
+- name: Add docker repository ...
+  apt_repository: repo="deb https://apt.dockerproject.org/repo/ ubuntu-xenial main" state=present
+
+
+
+
+  # Update repository
+
+- name: Update repository ...
+  apt: update_cache=yes
+
+  # Install packages
+
+- name: Install vim ...
+  apt: name=vim state=present
+
+- name: Install tmux ...
+  apt: name=tmux state=present
+
+- name: Install bridge-utils ...
+  apt: name=bridge-utils state=present
+
+- name: Install lxc ...
+  apt: name=lxc state=present
+
+- name: Install qemu ...
+  apt: name=qemu state=present
+
+- name: Install kvm ...
+  apt: name=kvm state=present
+
+- name: Install nftables ...
+  apt: name=nftables state=present
+
+- name: Install ebtables ...
+  apt: name=ebtables state=present
+
+- name: Install virtualbox ...
+  apt: name=virtualbox state=present
+
+- name: Install openvswitch-switch
+  apt: name=openvswitch-switch state=present
+
+- name: Install wireshark ...
+  apt: name=wireshark state=present
+
+  # CHANGE to primary shell
+- name: Install fish ...
+  apt: name=fish state=present
+
+- name: Modify default shell
+  user: name=root shell=/usr/bin/fish
+
+  # Install repositoy
+- name: Install gns3 ...
+  apt: name={{ item }} state=present
+  with_items:
+    - gns3-gui
+    - gns3-iou
+
+- name: Install musescore ...
+  apt: name=musescore state=present
+
+- name: Install docker ...
+  apt: name=docker-engine state=present
