@@ -20,9 +20,9 @@ This project permits install all packages that I costume use in my projects. Alw
 * musescore
 * docker
 * virt-manager
+* pycharm
 
 ## Tasks to add
-* pycharm
 * eclipse
 * java
 * dnsmasq
