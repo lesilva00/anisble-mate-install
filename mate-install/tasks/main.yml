@@ -26,7 +26,8 @@
 - name: Add docker repository ...
   apt_repository: repo="deb https://apt.dockerproject.org/repo/ ubuntu-xenial main" state=present
 
-
+- name: Add java repository ...
+  apt_repository: repo=ppa:webupd8team/java state=present
 
 
   # Update repository
@@ -110,6 +111,9 @@
 
 - name: Install nodejs ...
   apt: name=nodejs state=present
+
+- name: Install java 7 ...
+  apt: name=oracle-java7-installer state=present
 
 - name: Download pycharm ...
   get_url: url="https://download.jetbrains.com/python/pycharm-community-2016.3.2.tar.gz" dest=/tmp/pycharm.tar.gz
