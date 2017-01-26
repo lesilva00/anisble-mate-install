@@ -118,9 +118,6 @@
 #- name: Install java 7 ...
 #  apt: name=oracle-java7-installer state=present
 
-- name: Install htop ...
-  apt: name=htop state=present
-
 - name: Download pycharm ...
   get_url: url="https://download.jetbrains.com/python/pycharm-community-2016.3.2.tar.gz" dest=/tmp/pycharm.tar.gz
 
@@ -129,3 +126,9 @@
 
 - name: Create pycharm symbolic link to /etc ...
   file: src=/opt/pycharm-community-2016.3.2/bin/pycharm.sh dest=/usr/bin/pycharm state=link
+
+- name: Download atom ...
+  get_url: url="https://atom.io/download/deb" dest=/tmp/atom.deb
+
+- name: Install atom ...
+  apt: deb=/tmp/atom.deb
