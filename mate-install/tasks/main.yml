@@ -80,10 +80,10 @@
 - name: Install wireshark ...
   apt: name=wireshark state=present
 
-- name: Install gedit
+- name: Install gedit ...
   apt: name=gedit state=present
 
-- name: Install htop
+- name: Install htop ...
   apt: name=htop state=present
 
 - name: Install bmon ...
@@ -99,8 +99,11 @@
 - name: Install fish ...
   apt: name=fish state=present
 
-- name: Modify default shell
-  user: name=root shell=/usr/bin/fish
+- name: Modify default shell ...
+  user: name={{ ansible_ssh_user }} shell=/usr/bin/fish
+
+- name: Copy config.fish ...
+  template: src=config.fish.j2 dest="{{lookup('env','HOME')}}/.config/fish/config.fish"
 
   # Install repositoy
 - name: Install gns3 ...
