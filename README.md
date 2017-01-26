@@ -34,7 +34,7 @@ This project permits install all packages that I costume use in my projects. Alw
 * htop
 * bmon
 * terminator
-* 
+
 # How to run ansible script
 
 First, you need install ansible:
@@ -51,9 +51,9 @@ After that, you need copy keys to machine that you will install packages:
 $ ssh-copy-id <user>@<ip>
 $ ssh <user>@<ip>
 ```
-
-Clone this project and edit inventory file add your ip. After this, execute ansible-playbook:
+If you can access via ssh directly without the terminal asks for password, you are able to run ansible script. 
+In your machine, clone this project and edit inventory file add your IP. After this, execute ansible-playbook:
 
 ```
-$ ansible-playbook -i inventory -u <user> -b site.yml
+$ ansible-playbook -i inventory -u <user> -b --ask-sudo-pass site.yml
 ```
