@@ -23,6 +23,7 @@ This project permits install all packages that I costume use in my projects. Alw
 * pycharm
 * gedit
 * nodejs
+* htop
 
 ## Tasks to add
 * eclipse
@@ -30,8 +31,7 @@ This project permits install all packages that I costume use in my projects. Alw
 * dnsmasq
 * ubuntu-software-central
 * notes
-* atom 
-* htop
+* atom
 * bmon
 * terminator
 
