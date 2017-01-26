@@ -86,6 +86,9 @@
 - name: Install bmon ...
   apt: name=bmon state=present
 
+- name: Install terminator ...
+  apt: name=terminator state=present
+
   # CHANGE to primary shell
 - name: Install fish ...
   apt: name=fish state=present
@@ -110,7 +113,7 @@
   get_url: url="https://deb.nodesource.com/setup_7.x" dest=/tmp/nodejs.sh
 
 - name: Change permission to execute ...
-  file: path=/tmp/nodejs.sh mode="u=x,g=x,o=x"
+  file: path=/tmp/nodejs.sh mode="u=rwx,g=rx,o=rx"
 
 - name: Execute nodejs.sh ...
   shell: /tmp/nodejs.sh
