@@ -34,7 +34,7 @@ This project permits install all packages that I costume use in my projects. Alw
 * htop
 * bmon
 * terminator
-* 
+
 # How to run ansible script
 
 First, you need install ansible:
