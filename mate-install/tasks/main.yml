@@ -83,6 +83,9 @@
 - name: Install htop
   apt: name=htop state=present
 
+- name: Install bmon ...
+  apt: name=bmon state=present
+
   # CHANGE to primary shell
 - name: Install fish ...
   apt: name=fish state=present

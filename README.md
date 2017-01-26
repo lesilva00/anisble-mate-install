@@ -25,6 +25,7 @@ This project permits install all packages that I costume use in my projects. Alw
 * nodejs
 * htop
 * atom
+* bmon
 
 ## Tasks to add
 * eclipse
@@ -32,7 +33,6 @@ This project permits install all packages that I costume use in my projects. Alw
 * dnsmasq
 * notes
 * ubuntu-software-central
-* bmon
 * terminator
 
 # How to run ansible script
