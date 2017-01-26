@@ -28,13 +28,13 @@ This project permits install all packages that I costume use in my projects. Alw
 * bmon
 * terminator
 * eclipse
+* android-studio
 
 ## Tasks to add
 * java
 * dnsmasq
 * notes
 * ubuntu-software-central
-* android-studio
 
 # How to run ansible script
 
