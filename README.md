@@ -24,14 +24,14 @@ This project permits install all packages that I costume use in my projects. Alw
 * gedit
 * nodejs
 * htop
+* atom
 
 ## Tasks to add
 * eclipse
 * java
 * dnsmasq
-* ubuntu-software-central
 * notes
-* atom
+* ubuntu-software-central
 * bmon
 * terminator
 
@@ -51,7 +51,7 @@ After that, you need copy keys to machine that you will install packages:
 $ ssh-copy-id <user>@<ip>
 $ ssh <user>@<ip>
 ```
-If you can access via ssh directly without the terminal asks for password, you are able to run ansible script. 
+If you can access via ssh directly without the terminal asks for password, you are able to run ansible script.
 In your machine, clone this project and edit inventory file add your IP. After this, execute ansible-playbook:
 
 ```
