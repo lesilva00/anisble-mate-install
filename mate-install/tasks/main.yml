@@ -80,6 +80,9 @@
 - name: Install gedit
   apt: name=gedit state=present
 
+- name: Install htop
+  apt: name=htop state=present
+
   # CHANGE to primary shell
 - name: Install fish ...
   apt: name=fish state=present
