@@ -39,7 +39,7 @@
 
 - name: Install git ...
   apt: name=git state=present
-  
+
 - name: Install vim ...
   apt: name=vim state=present
 
@@ -91,6 +91,9 @@
 
 - name: Install terminator ...
   apt: name=terminator state=present
+
+- name: Install pavucontrol
+  apt: name=pavucontrol state=present
 
   # CHANGE to primary shell
 - name: Install fish ...

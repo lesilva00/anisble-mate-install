@@ -30,6 +30,7 @@ This project permits install all packages that I costume use in my projects. Alw
 * eclipse
 * android-studio
 * git
+* pavucontrol
 
 ## Tasks to add
 * java
