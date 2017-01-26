@@ -123,6 +123,14 @@
 
 #- name: Install java 7 ...
 #  apt: name=oracle-java7-installer state=present
+- name: Download eclipse-neon ...
+  get_url: url="http://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/neon/2/eclipse-java-neon-2-linux-gtk-x86_64.tar.gz" dest=/tmp/eclipse-neon.tar.gz
+
+- name: Unzip eclipse-neon
+  unarchive: src=/tmp/eclipse-neon.tar.gz dest=/opt/
+
+- name: Create eclipse-neon symbolic link to /etc ...
+  file: src=/opt/eclipse/eclipse dest=/usr/bin/eclipse state=link
 
 - name: Download pycharm ...
   get_url: url="https://download.jetbrains.com/python/pycharm-community-2016.3.2.tar.gz" dest=/tmp/pycharm.tar.gz
