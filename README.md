@@ -29,6 +29,7 @@ This project permits install all packages that I costume use in my projects. Alw
 * terminator
 * eclipse
 * android-studio
+* git
 
 ## Tasks to add
 * java

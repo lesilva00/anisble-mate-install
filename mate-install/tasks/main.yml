@@ -37,6 +37,9 @@
 
   # Install packages
 
+- name: Install git ...
+  apt: name=git state=present
+  
 - name: Install vim ...
   apt: name=vim state=present
 
