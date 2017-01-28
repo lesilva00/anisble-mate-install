@@ -31,6 +31,7 @@ This project permits install all packages that I costume use in my projects. Alw
 * android-studio
 * git
 * pavucontrol
+* webtorrent
 
 ## Tasks to add
 * java
