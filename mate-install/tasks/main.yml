@@ -62,9 +62,6 @@
 - name: Install virt-manager
   apt: name=virt-manager state=present
 
-- name: Install kvm ...
-  apt: name=kvm state=present
-
 - name: Install nftables ...
   apt: name=nftables state=present
 
